@@ -493,7 +493,7 @@ public sealed partial class Program : TestBase
 
         #region Write
         await Write.WriteAsync(cdfPath, lineBuilder.ToString(), TestContext.CancellationToken);
-        Debug.WriteLine(lineBuilder.ToString());
+        //Debug.WriteLine(lineBuilder.ToString());
         #endregion Write
 
         #region Assert
