@@ -16,23 +16,23 @@ Before you do, place copies of these latest JSON files from the [swccgpc/swccg-c
 Then run the dotnet restore, build and test commands in the terminal from the **Json2Cdf** subfolder:
 
 ```
-~> dotnet restore
-Restore complete (0.5s)
+PS C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf> dotnet restore
+Restore complete (1.3s)
 
-Build succeeded in 0.9s
-~> dotnet build
-Restore complete (0.5s)
-  Json2Cdf net10.0 succeeded (0.7s) → bin\Debug\net10.0\Json2Cdf.dll
+Build succeeded in 1.7s
+PS C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf> dotnet build
+Restore complete (0.6s)
+  Json2Cdf net10.0 succeeded (4.5s) → bin\Debug\net10.0\Json2Cdf.dll
 
-Build succeeded in 1.9s
-~> dotnet test --logger "console;verbosity=detailed" --filter "TestCategory=Integration"
+Build succeeded in 5.8s
+PS C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf> dotnet test --logger "console;verbosity=detailed" --filter "TestCategory=Integration"
 Restore complete (0.5s)
   Json2Cdf net10.0 succeeded (0.4s) → bin\Debug\net10.0\Json2Cdf.dll
 A total of 1 test files matched the specified pattern.
 C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf\bin\Debug\net10.0\Json2Cdf.dll
 Test Parallelization enabled for C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf\bin\Debug\net10.0\Json2Cdf.dll (Workers: 16, Scope: MethodLevel)
 Test Parallelization enabled for C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf\bin\Debug\net10.0\Json2Cdf.dll (Workers: 16, Scope: MethodLevel)
-  Passed Main ("Light.json","LightLegacy.json","lightside.cdf","reb.gif") [353 ms]
+  Passed Main ("Light.json","LightLegacy.json","lightside.cdf","reb.gif") [334 ms]
   Standard Output Messages:
 
 
@@ -40,8 +40,8 @@ Test Parallelization enabled for C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cd
  ********************************************************************************
  https://github.com/ronhowe
  ********************************************************************************
- 2026-02-12 15:26:56.404 (LOCAL)
- 2026-02-12 20:26:56.409 (UTC)
+ 2026-02-12 17:40:40.666 (LOCAL)
+ 2026-02-12 22:40:40.670 (UTC)
  Initializing Test
  Reading C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf\bin\Debug\net10.0\Light.json
  Reading C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf\bin\Debug\net10.0\LightLegacy.json
@@ -49,7 +49,7 @@ Test Parallelization enabled for C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cd
  Cleaning Test
 
 
-  Passed Main ("Dark.json","DarkLegacy.json","darkside.cdf","imp.gif") [353 ms]
+  Passed Main ("Dark.json","DarkLegacy.json","darkside.cdf","imp.gif") [332 ms]
   Standard Output Messages:
 
 
@@ -57,8 +57,8 @@ Test Parallelization enabled for C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cd
  ********************************************************************************
  https://github.com/ronhowe
  ********************************************************************************
- 2026-02-12 15:26:56.404 (LOCAL)
- 2026-02-12 20:26:56.409 (UTC)
+ 2026-02-12 17:40:40.666 (LOCAL)
+ 2026-02-12 22:40:40.670 (UTC)
  Initializing Test
  Reading C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf\bin\Debug\net10.0\Dark.json
  Reading C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf\bin\Debug\net10.0\DarkLegacy.json
@@ -70,12 +70,12 @@ Test Parallelization enabled for C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cd
 Test Run Successful.
 Total tests: 2
      Passed: 2
- Total time: 1.2611 Seconds
-  Json2Cdf test net10.0 succeeded (1.6s)
+ Total time: 1.2022 Seconds
+  Json2Cdf test net10.0 succeeded (1.8s)
 
-Test summary: total: 2, failed: 0, succeeded: 2, skipped: 0, duration: 1.5s
-Build succeeded in 3.4s
-~>
+Test summary: total: 2, failed: 0, succeeded: 2, skipped: 0, duration: 1.8s
+Build succeeded in 3.3s
+PS C:\Users\ronhowe\repos\ronhowe\Json2Cdf\Json2Cdf>
 ```
 
 After running the tests, you should find the generated CDF files in the build folder (e.g., **bin\Debug\net10.0**).
