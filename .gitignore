@@ -416,3 +416,12 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+# NCrunch
+.*crunch*.local.xml
+.NCrunch_MySolution/
+_NCrunch_*
+.NCrunch*
+nCrunchTemp_*
+
+*.json
