@@ -159,6 +159,7 @@ internal static class Format
             "224" => "Set 24",
             "225" => "Set 25",
             "226" => "Set 26",
+            "227" => "Set 27",
             "301" => "Virtual Premium Set", // aka Demo Deck
             "401" => "Dream Cards",
             "501" => "Playtesting",
