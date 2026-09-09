@@ -10,8 +10,10 @@ public sealed partial class Program : TestBase
 {
     [TestMethod]
     [TestCategory("Integration")]
-    [DataRow(@"Dark.json", @"DarkLegacy.json", @"darkside.cdf", "imp.gif")]
-    [DataRow(@"Light.json", @"LightLegacy.json", @"lightside.cdf", "reb.gif")]
+    //[DataRow(@"Dark.json", @"DarkLegacy.json", @"darkside.cdf", "imp.gif")]
+    //[DataRow(@"Light.json", @"LightLegacy.json", @"lightside.cdf", "reb.gif")]
+    [DataRow(@"C:\Users\ronho\repos\swccgpc\swccg-card-json\Dark.json", @"C:\Users\ronho\repos\swccgpc\swccg-card-json\DarkLegacy.json", @"C:\Users\ronho\repos\swccgpc\holotable\darkside.cdf", "imp.gif")]
+    [DataRow(@"C:\Users\ronho\repos\swccgpc\swccg-card-json\Light.json", @"C:\Users\ronho\repos\swccgpc\swccg-card-json\LightLegacy.json", @"C:\Users\ronho\repos\swccgpc\holotable\lightside.cdf", "reb.gif")]
     public async Task Main(
         string liveJson,
         string legacyJson,
